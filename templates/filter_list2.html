@@ -1,0 +1,35 @@
+{% if need_list or technotype_list %} 
+<div class="choix">
+    {% if need and technotype_list %}
+    <form action="{% url 'needs2types' %}"  method="get">
+    {% csrf_token %}
+    <input style="visibility:hidden;" type="radio" name="nid" value="{{ need.id }}" checked><br />
+    <h3>Type de technologie</h3>
+        {% for ty in technotype_list %}
+        <input type="radio" name="typeid" value="{{ty.id}}" >{{ty.name}}<br/>
+        {% endfor %}
+    <input style="visibility:hidden;" type="radio" name="did" value="{{ difficulty.id }}" checked><br /><!--ici-->   
+    <input name="bla" type="submit" value= "Envoyer">
+    
+    
+    {% else %}
+    <form action="{% url 'needsandtypes' %}"  method="get">
+    {% csrf_token %}
+    {% if need_list %}  
+	<h3>J'ai besoin d'aide pour</h3>
+    	{% for ne in need_list %}  	    	
+    	<input type="radio" name="nid" value="{{ ne.id }}">{{ne.name}}<br/>
+    	{% endfor %}
+    {% endif %}
+	<br/>
+	{% if technotype_list %} 
+	<h3>Type de technologie</h3>
+    	{% for ty in technotype_list %}
+		<input type="radio" name="typeid" value="{{ ty.id }}">{{ty.name}}<br/>
+		{% endfor %}
+    {% endif %}
+	<input style="visibility:hidden;" type="radio" name="did" value="{{ difficulty.id }}" checked><br /><!--ici-->
+	<input name="bla" type="submit" value= "Envoyer">
+	{% endif %}		
+</div>
+{% endif %}

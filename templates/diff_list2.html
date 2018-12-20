@@ -1,0 +1,18 @@
+{% load staticfiles %}
+<div class="diff">
+	<h2>J'ai des difficultés :</h2>
+	<div class="boutons">
+		<a style="background-color:blue" alt="motrices" href="{% url 'difficulties' %}?did=1"><img style="filter: invert(1);" src="{% static 'images/Icone/motrices.png' %}"></br>motrices</a>
+		<a style="background-color:limegreen" alt="dans mes sens" href="{% url 'difficulties' %}?did=2"><img style="filter: invert(1);" src="{% static 'images/Icone/sens.png' %}"></br>dans mes sens</a>
+		<a style="background-color:tan" alt="de mémoire" href="{% url 'difficulties' %}?did=3"><img style="filter: invert(1);" src="{% static 'images/Icone/Mémoire.png' %}"></br>de mémoire</a>
+		<a style="background-color:maroon" alt="d'attention" href="{% url 'difficulties' %}?did=4"><img style="filter: invert(1);" src="{% static 'images/Icone/Attention.png' %}"></br>d'attention</a>
+		<a style="background-color:green" alt="de sommeil" href="{% url 'difficulties' %}?did=5"><img style="filter: invert(1);" src="{% static 'images/Icone/Sommeil.png' %}"></br>de sommeil</a>
+	</div>
+	<div class="boutons">   	
+        <a style="background-color:orange" alt="de planification d'organisation" href="{% url 'difficulties' %}?did=6"><img style="filter: invert(1);" src="{% static 'images/Icone/Planification.png' %}"></br>de planification d'organisation</a>
+        <a style="background-color:red" alt="de communication" href="{% url 'difficulties' %}?did=7"><img style="filter: invert(1);" src="{% static 'images/Icone/Communication.png' %}"></br>de communication</a>
+        <a style="background-color:darkblue" alt="d'apprentissage" href="{% url 'difficulties' %}?did=8"><img style="filter: invert(1);" src="{% static 'images/Icone/Apprentissage.png' %}"></br>d'apprentissage</a>
+        <a style="background-color:purple" alt="à me sentir en sécurité" href="{% url 'difficulties' %}?did=9"><img style="filter: invert(1);" src="{% static 'images/Icone/Sécurité.png' %}"</i></br>à me sentir en sécurité</a>
+        <a style="background-color:hotpink" alt="dans ma sexualité " href="{% url 'difficulties' %}?did=10"><img style="filter: invert(1);" src="{% static 'images/Icone/Sexe.png' %}"></i></br>dans ma sexualité</a>
+	</div>
+</div>
