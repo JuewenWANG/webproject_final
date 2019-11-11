@@ -1,9 +1,10 @@
 # webproject_final
 This is a repository for a project of website dedicated to helping people with disabilities find suitable assistant technologies.
 
-The website "Banque de donnée d'assistance numérique" (BDAN) is developed by students from the Cognitive Science Department at the University of Bordeaux, for the course of "multiple forme du métier".
+The website "Banque de donnée d'assistance numérique" (BDAN, http://juewen.pythonanywhere.com) is developed by students from the Cognitive Science Department at the University of Bordeaux, for the course of "multiple forme du métier".
 
 It is written with Django. For more information about how to write a webapp with django, please go to https://www.djangoproject.com/start/.
+
 
 ![screenshot of BDAN](screenshot.png "Screenshot of BDAN")
 
